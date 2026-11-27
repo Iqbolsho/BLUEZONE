@@ -2,220 +2,318 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    background: #080d1a;
+    background: #050b18;
     color: white;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-/* HEADER */
+:root {
+    --blue: #168cff;
+    --light-blue: #60b7ff;
+}
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px 8%;
-    background: #101d33;
     position: sticky;
     top: 0;
     z-index: 100;
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 7%;
+    background: rgba(3, 10, 25, 0.94);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #12345b;
 }
 
 .logo {
-    color: #1685ff;
-    font-size: 27px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
 }
 
-.logo span {
-    color: white;
+.logo span,
+h2 span,
+footer span {
+    color: var(--blue);
+}
+
+nav {
+    display: flex;
+    gap: 25px;
 }
 
 nav a {
-    color: white;
+    color: #c5d8ef;
     text-decoration: none;
-    margin-left: 20px;
+    font-size: 13px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #1685ff;
+    color: var(--light-blue);
 }
 
-/* HERO */
-
-.hero {
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    background: linear-gradient(
-        135deg,
-        #080d1a,
-        #102e60,
-        #080d1a
-    );
+button,
+a {
+    cursor: pointer;
 }
 
-.hero h1 {
-    color: #1685ff;
-    font-size: 45px;
-    margin-bottom: 20px;
-    text-shadow: 0 0 20px #1685ff;
-}
-
-.hero p {
-    color: #b7c9e5;
-    font-size: 19px;
-    margin-bottom: 30px;
-}
-
-.main-btn {
-    display: inline-block;
-    background: #1677ff;
+.top-button {
+    background: var(--blue);
+    border: none;
     color: white;
-    padding: 15px 30px;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.main-btn:hover {
-    background: #0055cc;
-    transform: scale(1.08);
-}
-
-/* SECTIONS */
-
-section:not(.hero) {
-    padding: 80px 8%;
-    text-align: center;
-}
-
-section h1 {
-    color: #1685ff;
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.about-text {
-    color: #b7c9e5;
-    line-height: 1.8;
-}
-
-/* GAME CARDS */
-
-.games-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
-.card {
-    background: #142440;
-    width: 260px;
-    padding: 30px 20px;
-    border-radius: 18px;
-    border: 1px solid #234a80;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 0 25px #1677ff;
-    border-color: #1685ff;
-}
-
-.game-icon {
-    font-size: 55px;
-    margin-bottom: 20px;
-}
-
-.card h2 {
-    color: #1685ff;
-    margin-bottom: 15px;
-}
-
-.card p {
-    color: #b7c9e5;
-    margin-bottom: 25px;
-}
-
-/* BUTTONS */
-
-.game-btn {
-    display: inline-block;
-    background: #1677ff;
-    color: white;
-    text-decoration: none;
-    padding: 13px 20px;
-    border-radius: 9px;
+    padding: 12px 18px;
+    border-radius: 8px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.game-btn:hover {
-    background: #0055cc;
-    box-shadow: 0 0 15px #1685ff;
+.top-button:hover,
+.game-btn:hover,
+.main-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px #168cff88;
 }
 
-/* CONTACT */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background:
+        radial-gradient(circle at 50% 40%, #123f79 0%, transparent 50%),
+        linear-gradient(135deg, #050b18, #081c38);
+}
 
-#contact button {
-    background: #1677ff;
-    color: white;
+.hero h1 {
+    font-size: clamp(35px, 7vw, 75px);
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    color: var(--blue);
+    text-shadow: 0 0 30px #168cff88;
+}
+
+.hero p {
+    color: #b5c8df;
+    margin-bottom: 30px;
+}
+
+.small-title {
+    color: var(--light-blue);
+    letter-spacing: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main-btn,
+.game-btn {
+    display: inline-block;
+    text-decoration: none;
     border: none;
-    padding: 15px 30px;
-    margin-top: 25px;
-    border-radius: 10px;
-    cursor: pointer;
+    background: var(--blue);
+    color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-#contact button:hover {
-    background: #0055cc;
+.section {
+    padding: 100px 7%;
+    text-align: center;
 }
 
-/* FOOTER */
+.section h2 {
+    font-size: clamp(28px, 5vw, 45px);
+    margin-bottom: 25px;
+}
+
+.section > p {
+    color: #a9bdd6;
+    line-height: 1.7;
+}
+
+.section-description {
+    margin-bottom: 45px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.card {
+    background: linear-gradient(145deg, #102441, #081426);
+    border: 1px solid #193d68;
+    border-radius: 16px;
+    padding: 35px 20px;
+    transition: 0.35s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: var(--blue);
+    box-shadow: 0 15px 35px #006eff22;
+}
+
+.game-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #a9bdd6;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.launchers-section {
+    background: linear-gradient(180deg, #050b18, #0a1a32);
+}
+
+.launcher-card {
+    min-height: 240px;
+}
+
+.sk-button {
+    background: linear-gradient(90deg, #087bff, #42b7ff);
+}
 
 footer {
-    background: #101d33;
+    padding: 65px 20px;
     text-align: center;
-    padding: 30px;
-    color: #8ba9d4;
+    background: #020711;
+    border-top: 1px solid #12345b;
 }
 
 footer h2 {
-    color: #1685ff;
-    margin-bottom: 10px;
+    font-size: 35px;
+    margin-bottom: 15px;
 }
 
-/* MOBILE */
+footer p {
+    color: #8fa9c8;
+    margin-bottom: 25px;
+}
+
+/* REVEAL ANIMATIONS */
+
+body.js-ready .reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+body.js-ready .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* SKLAUNCHER FULLSCREEN */
+
+.sk-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background:
+        radial-gradient(circle, #123f79, #030916 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.sk-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sk-message {
+    transform: scale(0.7);
+    transition: 0.5s;
+}
+
+.sk-overlay.active .sk-message {
+    transform: scale(1);
+}
+
+.sk-message h1 {
+    font-size: clamp(35px, 8vw, 75px);
+    line-height: 1.25;
+    margin: 30px 0;
+}
+
+.sk-message h1 span {
+    color: var(--light-blue);
+    text-shadow: 0 0 30px #168cff;
+}
+
+.close-button {
+    display: block;
+    margin: 25px auto 0;
+    background: transparent;
+    border: 1px solid #6089b8;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+
+.close-button:hover {
+    background: #18365b;
+}
 
 @media (max-width: 650px) {
-
     header {
-        flex-direction: column;
-        gap: 20px;
+        padding: 15px 4%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
     }
 
     nav a {
-        margin: 0 6px;
-        font-size: 13px;
+        font-size: 11px;
     }
 
-    .hero h1 {
-        font-size: 30px;
+    .logo {
+        font-size: 20px;
     }
 
-    .card {
-        width: 100%;
-        max-width: 320px;
+    .top-button {
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .section {
+        padding: 70px 5%;
     }
 }

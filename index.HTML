@@ -1,169 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BLUEZONE - Gaming Website</title>
+    <title>BLUEZONE | Gaming World by Iqbolsho</title>
 
+    <meta name="description" content="Welcome to BLUEZONE — your gaming world! Discover Minecraft, GTA, Free Fire, Minecraft launchers and mods.">
+    <meta name="author" content="Iqbolsho">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="BLUEZONE - Gaming World">
+    <meta property="og:description" content="Explore games, launchers and Minecraft mods!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://iqbolsho.github.io/BLUEZONE/">
+
+    <link rel="canonical" href="https://iqbolsho.github.io/BLUEZONE/">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
+<header>
+    <a href="#home" class="logo">BLUE<span>ZONE</span></a>
 
-    <header>
-        <div class="logo">BLUE<span>ZONE</span></div>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#games">GAMES</a>
+    </nav>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#games">Games</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <button class="top-button" id="bottomButton">
+        BLUEZONE ↓
+    </button>
+</header>
 
+<section id="home" class="hero">
+    <div class="hero-content reveal">
+        <p class="small-title">WELCOME TO MY WORLD</p>
+        <h1>WELCOME TO <span>BLUEZONE</span></h1>
+        <p>Your ultimate gaming destination.</p>
+        <a href="#games" class="main-btn">EXPLORE GAMES</a>
+    </div>
+</section>
 
-    <!-- HOME -->
+<section id="about" class="section reveal">
+    <h2>ABOUT <span>BLUEZONE</span></h2>
+    <p>
+        Welcome to BLUEZONE! Discover games, launchers,
+        Minecraft mods and much more.
+    </p>
+</section>
 
-    <section id="home" class="hero">
+<section id="games" class="section">
+    <h2 class="reveal">MY <span>GAMES</span></h2>
 
-        <div class="hero-content">
+    <div class="cards">
 
-            <h1>WELCOME TO BLUEZONE</h1>
-
-            <p>Your ultimate gaming destination.</p>
-
-            <a href="#games" class="main-btn">
-                EXPLORE GAMES
-            </a>
-
+        <div class="card reveal">
+            <div class="game-icon">⛏️</div>
+            <h3>MINECRAFT</h3>
+            <p>Explore your own world!</p>
+            <a href="#launchers" class="game-btn">EXPLORE</a>
         </div>
 
-    </section>
-
-
-    <!-- ABOUT -->
-
-    <section id="about">
-
-        <h1>ABOUT US</h1>
-
-        <p class="about-text">
-            Welcome to BLUEZONE!
-            This is a website for gamers.
-            Discover games and explore new worlds.
-        </p>
-
-    </section>
-
-
-    <!-- GAMES -->
-
-    <section id="games">
-
-        <h1>MY GAMES</h1>
-
-        <div class="games-container">
-
-            <!-- MINECRAFT -->
-
-            <div class="card">
-
-                <div class="game-icon">⛏️</div>
-
-                <h2>MINECRAFT</h2>
-
-                <p>Explore your world!</p>
-
-                <a href="downloads/TLauncher-Setup.exe"
-                   download
-                   class="game-btn">
-
-                    DOWNLOAD
-
-                </a>
-
-            </div>
-
-
-            <!-- GTA -->
-
-            <div class="card">
-
-                <div class="game-icon">🚗</div>
-
-                <h2>GTA</h2>
-
-                <p>Welcome to the city!</p>
-
-                <a href="https://www.rockstargames.com/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="game-btn">
-
-                    VISIT ROCKSTAR
-
-                </a>
-
-            </div>
-
-
-            <!-- FREE FIRE -->
-
-            <div class="card">
-
-                <div class="game-icon">🎮</div>
-
-                <h2>FREE FIRE</h2>
-
-                <p>Battle and survive!</p>
-
-                <a href="https://ff.garena.com/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="game-btn">
-
-                    VISIT WEBSITE
-
-                </a>
-
-            </div>
-
+        <div class="card reveal">
+            <div class="game-icon">🚗</div>
+            <h3>GTA</h3>
+            <p>Welcome to the city!</p>
+            <a href="https://www.rockstargames.com/"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT WEBSITE</a>
         </div>
 
-    </section>
+        <div class="card reveal">
+            <div class="game-icon">🎮</div>
+            <h3>FREE FIRE</h3>
+            <p>Battle and survive!</p>
+            <a href="https://ff.garena.com/"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT WEBSITE</a>
+        </div>
 
+    </div>
+</section>
 
-    <!-- CONTACT -->
+<section id="launchers" class="section launchers-section">
 
-    <section id="contact">
+    <p class="small-title reveal">MINECRAFT CORNER</p>
+    <h2 class="reveal">LAUNCHERS <span>& MODS</span></h2>
 
-        <h1>CONTACT</h1>
+    <p class="section-description reveal">
+        Discover Minecraft launchers and mod platforms.
+    </p>
 
-        <p>Welcome to my gaming website!</p>
+    <div class="cards">
 
-        <button onclick="contactMessage()">
-            CONTACT ME
+        <div class="card launcher-card reveal">
+            <div class="game-icon">🚀</div>
+            <h3>SKLAUNCHER</h3>
+            <p>Explore SKlauncher.</p>
+            <a href="https://skmedix.pl/"
+               class="game-btn sk-button"
+               id="skButton">EXPLORE</a>
+        </div>
+
+        <div class="card launcher-card reveal">
+            <div class="game-icon">🟩</div>
+            <h3>TLAUNCHER</h3>
+            <p>Minecraft launcher website.</p>
+            <a href="https://tlauncher.org/"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT</a>
+        </div>
+
+        <div class="card launcher-card reveal">
+            <div class="game-icon">⚡</div>
+            <h3>LEGACY LAUNCHER</h3>
+            <p>Visit the project website.</p>
+            <a href="https://llaun.ch/en"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT</a>
+        </div>
+
+        <div class="card launcher-card reveal">
+            <div class="game-icon">💎</div>
+            <h3>PRISM LAUNCHER</h3>
+            <p>Manage Minecraft instances.</p>
+            <a href="https://prismlauncher.org/"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT</a>
+        </div>
+
+        <div class="card launcher-card reveal">
+            <div class="game-icon">🔷</div>
+            <h3>OFFPRISM</h3>
+            <p>A Prism Launcher fork.</p>
+            <a href="https://github.com/offprism/launcher"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT</a>
+        </div>
+
+        <div class="card launcher-card reveal">
+            <div class="game-icon">🧩</div>
+            <h3>MODRINTH</h3>
+            <p>Discover Minecraft mods.</p>
+            <a href="https://modrinth.com/"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">EXPLORE</a>
+        </div>
+
+        <div class="card launcher-card reveal">
+            <div class="game-icon">🔥</div>
+            <h3>CURSEFORGE</h3>
+            <p>Explore mods and modpacks.</p>
+            <a href="https://www.curseforge.com/minecraft"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">EXPLORE</a>
+        </div>
+
+    </div>
+</section>
+
+<footer id="footer">
+    <h2>BLUE<span>ZONE</span></h2>
+    <p>Created by Iqbolsho | © 2026</p>
+    <button id="topButton" class="game-btn">BACK TO TOP ↑</button>
+</footer>
+
+<!-- SKLAUNCHER FULLSCREEN MESSAGE -->
+
+<div class="sk-overlay" id="skOverlay">
+    <div class="sk-message">
+        <p class="small-title">A MESSAGE FROM BLUEZONE</p>
+
+        <h1>
+            DO YOU PLAY<br>
+            <span>MINECRAFT</span><br>
+            WITH ME?
+        </h1>
+
+        <a href="https://skmedix.pl/"
+           target="_blank" rel="noopener noreferrer"
+           class="main-btn">YES, LET'S GO!</a>
+
+        <button id="closeOverlay" class="close-button">
+            CLOSE
         </button>
+    </div>
+</div>
 
-    </section>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        <h2>BLUEZONE</h2>
-
-        <p>© 2026 BLUEZONE. All rights reserved.</p>
-
-    </footer>
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
