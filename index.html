@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BLUEZONE | Gaming World by Iqbolsho</title>
+    <title>BLUEZONE | 100000 in 1 by Iqbolsho</title>
 
-    <meta name="description" content="Welcome to BLUEZONE — your gaming world! Discover Minecraft, GTA, Free Fire, Minecraft launchers and mods.">
+    <meta name="description" content="BLUEZONE — 100000 in 1. Discover games, AI tools, Minecraft launchers, drivers and more.">
     <meta name="author" content="Iqbolsho">
     <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="BLUEZONE - Gaming World">
-    <meta property="og:description" content="Explore games, launchers and Minecraft mods!">
+    <meta property="og:title" content="BLUEZONE | 100000 in 1">
+    <meta property="og:description" content="Games, AI, drivers and much more in one place.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://iqbolsho.github.io/BLUEZONE/">
 
@@ -26,34 +26,65 @@
 
     <nav>
         <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
         <a href="#games">GAMES</a>
+        <a href="#ai">AI</a>
+        <a href="#drivers">DRIVERS</a>
     </nav>
 
-    <button class="top-button" id="bottomButton">
-        BLUEZONE ↓
-    </button>
+    <button class="top-button" id="bottomButton">EXPLORE ↓</button>
 </header>
+
+<!-- HOME / SEARCH -->
 
 <section id="home" class="hero">
     <div class="hero-content reveal">
-        <p class="small-title">WELCOME TO MY WORLD</p>
-        <h1>WELCOME TO <span>BLUEZONE</span></h1>
-        <p>Your ultimate gaming destination.</p>
-        <a href="#games" class="main-btn">EXPLORE GAMES</a>
+
+        <p class="small-title">WELCOME TO THE FUTURE</p>
+
+        <h1>BLUE<span>ZONE</span></h1>
+
+        <h2 class="main-subtitle">100000 IN 1</h2>
+
+        <p class="question">What are you interested in?</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Games, AI, Driver..."
+                autocomplete="off"
+            >
+            <button id="searchButton">SEARCH</button>
+        </div>
+
+        <p id="searchMessage" class="search-message">
+            Type something and press Enter
+        </p>
+
+        <div class="quick-links">
+            <button data-category="games">🎮 GAMES</button>
+            <button data-category="ai">🤖 AI</button>
+            <button data-category="drivers">💻 DRIVERS</button>
+        </div>
+
     </div>
 </section>
 
-<section id="about" class="section reveal">
+<!-- ABOUT -->
+
+<section class="section about-section reveal">
     <h2>ABOUT <span>BLUEZONE</span></h2>
     <p>
-        Welcome to BLUEZONE! Discover games, launchers,
-        Minecraft mods and much more.
+        One place. Many possibilities.
+        Explore games, artificial intelligence, drivers and more.
     </p>
 </section>
 
+<!-- GAMES -->
+
 <section id="games" class="section">
-    <h2 class="reveal">MY <span>GAMES</span></h2>
+    <p class="small-title reveal">GAMING WORLD</p>
+    <h2 class="reveal">EXPLORE <span>GAMES</span></h2>
 
     <div class="cards">
 
@@ -61,7 +92,7 @@
             <div class="game-icon">⛏️</div>
             <h3>MINECRAFT</h3>
             <p>Explore your own world!</p>
-            <a href="#launchers" class="game-btn">EXPLORE</a>
+            <a href="#launchers" class="game-btn">LAUNCHERS</a>
         </div>
 
         <div class="card reveal">
@@ -85,27 +116,23 @@
     </div>
 </section>
 
+<!-- MINECRAFT LAUNCHERS -->
+
 <section id="launchers" class="section launchers-section">
 
     <p class="small-title reveal">MINECRAFT CORNER</p>
     <h2 class="reveal">LAUNCHERS <span>& MODS</span></h2>
 
-    <p class="section-description reveal">
-        Discover Minecraft launchers and mod platforms.
-    </p>
-
     <div class="cards">
 
-        <div class="card launcher-card reveal">
+        <div class="card reveal">
             <div class="game-icon">🚀</div>
             <h3>SKLAUNCHER</h3>
             <p>Explore SKlauncher.</p>
-            <a href="https://skmedix.pl/"
-               class="game-btn sk-button"
-               id="skButton">EXPLORE</a>
+            <button class="game-btn" id="skButton">EXPLORE</button>
         </div>
 
-        <div class="card launcher-card reveal">
+        <div class="card reveal">
             <div class="game-icon">🟩</div>
             <h3>TLAUNCHER</h3>
             <p>Minecraft launcher website.</p>
@@ -114,7 +141,7 @@
                class="game-btn">VISIT</a>
         </div>
 
-        <div class="card launcher-card reveal">
+        <div class="card reveal">
             <div class="game-icon">⚡</div>
             <h3>LEGACY LAUNCHER</h3>
             <p>Visit the project website.</p>
@@ -123,7 +150,7 @@
                class="game-btn">VISIT</a>
         </div>
 
-        <div class="card launcher-card reveal">
+        <div class="card reveal">
             <div class="game-icon">💎</div>
             <h3>PRISM LAUNCHER</h3>
             <p>Manage Minecraft instances.</p>
@@ -132,7 +159,7 @@
                class="game-btn">VISIT</a>
         </div>
 
-        <div class="card launcher-card reveal">
+        <div class="card reveal">
             <div class="game-icon">🔷</div>
             <h3>OFFPRISM</h3>
             <p>A Prism Launcher fork.</p>
@@ -141,7 +168,7 @@
                class="game-btn">VISIT</a>
         </div>
 
-        <div class="card launcher-card reveal">
+        <div class="card reveal">
             <div class="game-icon">🧩</div>
             <h3>MODRINTH</h3>
             <p>Discover Minecraft mods.</p>
@@ -150,7 +177,7 @@
                class="game-btn">EXPLORE</a>
         </div>
 
-        <div class="card launcher-card reveal">
+        <div class="card reveal">
             <div class="game-icon">🔥</div>
             <h3>CURSEFORGE</h3>
             <p>Explore mods and modpacks.</p>
@@ -162,16 +189,145 @@
     </div>
 </section>
 
+<!-- AI -->
+
+<section id="ai" class="section ai-section">
+
+    <p class="small-title reveal">ARTIFICIAL INTELLIGENCE</p>
+    <h2 class="reveal">DISCOVER <span>AI</span></h2>
+
+    <p class="section-description reveal">
+        Powerful AI tools, all in one place.
+    </p>
+
+    <div class="cards">
+
+        <div class="card reveal">
+            <div class="game-icon">💬</div>
+            <h3>CHATGPT</h3>
+            <p>Ask questions and explore ideas.</p>
+            <a href="https://chatgpt.com/"
+               class="game-btn ai-button"
+               data-ai="chatgpt">OPEN AI</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="game-icon">🧠</div>
+            <h3>CLAUDE</h3>
+            <p>Explore AI from Anthropic.</p>
+            <a href="https://claude.ai/"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="game-icon">✨</div>
+            <h3>GEMINI</h3>
+            <p>Discover Google's AI.</p>
+            <a href="https://gemini.google.com/"
+               class="game-btn ai-button"
+               data-ai="gemini">OPEN AI</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="game-icon">🔎</div>
+            <h3>DEEPSEEK</h3>
+            <p>Explore another AI assistant.</p>
+            <a href="https://chat.deepseek.com/"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="game-icon">𝕏</div>
+            <h3>GROK</h3>
+            <p>Discover Grok AI.</p>
+            <a href="https://grok.com/"
+               class="game-btn ai-button"
+               data-ai="grok">OPEN AI</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- DRIVERS -->
+
+<section id="drivers" class="section drivers-section">
+
+    <p class="small-title reveal">PC SUPPORT CENTER</p>
+    <h2 class="reveal">DEVICE <span>DRIVERS</span></h2>
+
+    <p class="section-description reveal">
+        Find official driver support for your computer.
+    </p>
+
+    <div class="cards">
+
+        <div class="card reveal">
+            <div class="game-icon">🟢</div>
+            <h3>NVIDIA</h3>
+            <p>Graphics card drivers.</p>
+            <a href="https://www.nvidia.com/Download/index.aspx"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">DOWNLOAD</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="game-icon">🔵</div>
+            <h3>INTEL</h3>
+            <p>Intel driver support assistant.</p>
+            <a href="https://www.intel.com/content/www/us/en/support/detect.html"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="game-icon">🔴</div>
+            <h3>AMD</h3>
+            <p>AMD graphics and chipset drivers.</p>
+            <a href="https://www.amd.com/en/support/download/drivers.html"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="game-icon">🛠️</div>
+            <h3>DRIVERPACK</h3>
+            <p>Third-party driver service.</p>
+            <a href="https://driverpack.io/en"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT</a>
+        </div>
+
+        <div class="card reveal">
+            <div class="game-icon">🪟</div>
+            <h3>WINDOWS UPDATE</h3>
+            <p>Windows driver updates.</p>
+            <a href="https://support.microsoft.com/windows"
+               target="_blank" rel="noopener noreferrer"
+               class="game-btn">VISIT</a>
+        </div>
+
+    </div>
+
+    <p class="driver-warning">
+        Tip: Always prefer drivers from your device or hardware manufacturer's official website.
+    </p>
+</section>
+
+<!-- FOOTER -->
+
 <footer id="footer">
     <h2>BLUE<span>ZONE</span></h2>
+    <p>100000 IN 1</p>
     <p>Created by Iqbolsho | © 2026</p>
     <button id="topButton" class="game-btn">BACK TO TOP ↑</button>
 </footer>
 
-<!-- SKLAUNCHER FULLSCREEN MESSAGE -->
+<!-- SKLAUNCHER POPUP -->
 
-<div class="sk-overlay" id="skOverlay">
-    <div class="sk-message">
+<div class="overlay" id="skOverlay">
+    <div class="popup">
         <p class="small-title">A MESSAGE FROM BLUEZONE</p>
 
         <h1>
@@ -184,9 +340,30 @@
            target="_blank" rel="noopener noreferrer"
            class="main-btn">YES, LET'S GO!</a>
 
-        <button id="closeOverlay" class="close-button">
-            CLOSE
-        </button>
+        <button class="close-button" id="closeSk">CLOSE</button>
+    </div>
+</div>
+
+<!-- AI POPUP -->
+
+<div class="overlay" id="aiOverlay">
+    <div class="popup">
+        <p class="small-title">BLUEZONE AI CENTER</p>
+
+        <h1>
+            NEED <span>AI?</span>
+        </h1>
+
+        <p class="popup-description">
+            Your AI assistant is waiting for you.
+        </p>
+
+        <a id="aiContinue"
+           href="https://chatgpt.com/"
+           target="_blank" rel="noopener noreferrer"
+           class="main-btn">YES, LET'S GO!</a>
+
+        <button class="close-button" id="closeAi">CLOSE</button>
     </div>
 </div>
 
